@@ -3,6 +3,8 @@
   <head>
      <title> Лабораторная работа 4 </title>
     <link rel="stylesheet" href="table.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
 </head>
 <body>
     <div class="header">
@@ -10,6 +12,19 @@
         <a href="page2.html">Позиционирование элементов</a>
         <a href="table.html">Таблица</a>
     </div>
+   <form id="form">
+     <label for="fname">ФИО студента:</label><br>
+     <input type="text" id="fname" name="fname" value="Дарья"><br>
+     <label for="lname">Номер группы:</label><br>
+     <input type="text" id="lname" name="fname" value="ЦК-ВТ-91"><br>
+     <label for="lname">Пол:</label><br>
+     <input type="text" id="lname" name="fname" value="Женский"><br>
+     <label for="lname">Возраст:</label><br>
+     <input type="text" id="lname" name="fname" value="20"><br>
+     <label for="lname">Название направления:</label><br>
+     <input type="text" id="lname" name="fname" value="Веб-технологии"><br>
+     <input type="submit" value="Добавить">
+   </form>
     <table style="width:100%">
      <caption>Моя таблица</caption>
     <tr>
@@ -55,5 +70,19 @@
         <td>Веб-технологии</td>
     </tr>
     </table>
+    <script>
+    $(function () {
+     $("#form").submit(function (event) {
+      event.preventDefault();
+        var inputs = $(this).find('input[type="text"]');
+            var table = $('table')[0];
+            var newRow = table.insertRow();
+            inputs.each(function() {
+                newRow.insertCell().textContent = this.value;
+            });
+            return false;
+        });
+    });
+    </script>
 </body>
 </html>
