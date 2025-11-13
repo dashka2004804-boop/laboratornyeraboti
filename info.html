@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Основная информация </title>
+    <link rel="stylesheet" href="style.css" />
+   <link 
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="info.html">Леонардо Ди Каприо</a>
+        <div class="navbar-nav">
+            <a class="nav-link active" href="info.html">Основная информация</a>
+            <a class="nav-link" href="films.html">Список фильмов</a>
+        </div>
+    </div>
+</nav>
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-3">
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Карусель</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Фильмы</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Об актёре</a>
+            </div>
+        </div>
+        <div class="col-9">
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="фото 1.jpg" class="d-block w-100" alt="Фото 1">
+        </div>
+        <div class="carousel-item">
+            <img src="фото 2.jpg" class="d-block w-100" alt="Фото 2">
+        </div>
+        <div class="carousel-item">
+            <img src="фото 3.jpg" class="d-block w-100" alt="Фото 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example">
+                <h4 id="list-item-1">Карусель</h4>
+                <p>Фотографии актёра.</p>
+                <div class="container mt-4">
+    <h2>Фильмы с участием актёра</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="постер 1.jpg" class="card-img-top" alt="Постер фильма 1">
+                <div class="card-body">
+                    <h5 class="card-title">Битва за битвой</h5>
+                    <p class="card-text">В молодости Боб Фергюсон вместе с женой состоял в группировке революционеров. Спустя 16 лет в его дом врывается давний противник полковник Локджо. Чтобы спасти дочь, Боб вынужден обратиться за помощью к своим бывшим соратникам.</p>
+                    <a href="https://www.kinopoisk.ru/film/5437094/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="постер 2.jpg" class="card-img-top" alt="Постер фильма 2">
+                <div class="card-body">
+                    <h5 class="card-title">Остров проклятых</h5>
+                    <p class="card-text">Двое приставов расследуют побег пациентки из мрачной психбольницы. Параноидальный триллер с Леонардо ДиКаприо</p>
+                    <a href="https://www.kinopoisk.ru/film/397667/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="постер 3.jpg" class="card-img-top" alt="Постер фильма 3">
+                <div class="card-body">
+                    <h5 class="card-title">Однажды в… Голливуде</h5>
+                    <p class="card-text">1969 год, золотой век Голливуда уже закончился. Известный актёр Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+                    <a href="https://www.kinopoisk.ru/film/1047883/" class="btn btn-primary">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <h4 id="list-item-2">Фильмы</h4>
+                <p>Фильмы с участием актёра.</p>
+                <div class="container mt-4">
+    <h2>Об актёре</h2>
+    
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#actorInfo">
+            Показать информацию
+        </button>
+    </p>
+    <div class="collapse" id="actorInfo">
+        <div class="card card-body">
+            <p><strong>Место рождения:</strong> 11 ноября 1974 г. (возраст 51 год), Лос-Анджелес, Калифорния, США</p>
+            <p><strong>Образование:</strong> UCLA Lab School</p>
+            <p><strong>Личная жизнь:</strong> Леонардо Ди Каприо официально не женат и не имеет детей. Он известен своими отношениями с молодыми моделями и актрисами, такими как Камила Морроне (с которой расстался в 2022 году). В сентябре 2023 года начались отношения с итальянской моделью Витторией Черетти.</p>
+        </div>
+    </div>
+</div>
+                <h4 id="list-item-3">Об актёре</h4>
+                <p>Информация об актёре.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
